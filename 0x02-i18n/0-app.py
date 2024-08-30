@@ -1,7 +1,6 @@
-from flask import Flask, render_template
+#!/usr/bin/python3
 """Simple flask app rendering an html page """
-
-
+from flask import Flask, render_template
 app = Flask(__name__)
 
 
@@ -11,4 +10,5 @@ def basic():
     return render_template('0-index.html')
 
 if __name__ == '__main__':
+    """ Run """
     app.run(host='0.0.0.0', port=5000)
