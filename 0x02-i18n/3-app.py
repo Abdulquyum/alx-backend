@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 
 class Config:
+    """ Configuration """
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
@@ -30,4 +31,5 @@ def greetings():
     return render_template('3-index.html')
 
 if __name__ == '__main__':
+    """ Run App """
     app.run(host='0.0.0.0', port=5000)
