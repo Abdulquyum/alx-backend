@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Simple flask app rendering an html page """
+""" Simple flask app rendering an html page """
+
+
 from flask import Flask, render_template
 app = Flask(__name__)
 
