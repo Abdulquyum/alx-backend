@@ -3,7 +3,7 @@
 
 
 from flask import Flask, render_template, request
-from babel import Babel, localeselector
+from flask_babel import Babel, localeselector
 
 
 app = Flask(__name__)
