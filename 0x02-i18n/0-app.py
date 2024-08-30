@@ -1,10 +1,14 @@
-from flask import Flask
+from flask import Flask, render_template
+"""Simple flask app rendering an html page """
+
 
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route('/', strict_slashes=False)
 def basic():
-    return "Hello World"
+    """route destination """
+    return render_template('0-index.html')
 
 if __name__ == '__main__':
-    flask.app()
+    app.run(host='0.0.0.0', port=5000)
