@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""
-Basic Flask app with Babel for timezone and location
-"""
+""" Basic Flask app with Babel for time location """
+
 
 from flask import Flask, render_template, request
 from babel import Babel, localeselector
