@@ -70,7 +70,7 @@ def get_locale():
 @app.route('/', strict_slashes=False)
 def greetings():
     """ render a simple html """
-    return render_template('5-index.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     """ Run App """
