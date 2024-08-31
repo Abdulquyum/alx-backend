@@ -25,6 +25,7 @@ app.config.from_object(Config)
 
 babel = Babel(app)
 
+
 def get_user():
     login_as = request.args.get('login_as')
 
@@ -56,7 +57,7 @@ def get_locale():
 @app.route('/', strict_slashes=False)
 def greetings():
     """ render a simple html """
-    return render_template('3-index.html')
+    return render_template('5-index.html')
 
 if __name__ == '__main__':
     """ Run App """
