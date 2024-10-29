@@ -8,3 +8,4 @@ def index_range(page: int, page_size: int) -> tuple:
     end = start + page_size
 
     return ((start, end))
+    
