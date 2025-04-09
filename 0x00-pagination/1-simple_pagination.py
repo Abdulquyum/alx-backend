@@ -34,10 +34,10 @@ class Server:
 
         dataset = self.dataset()
         start, end = self.index_range(page, page_size)
-        
+
         if start >= len(dataset):
             return []
-            
+
         return dataset[start:end]
 
     @staticmethod
@@ -47,4 +47,3 @@ class Server:
         end = start + page_size
 
         return ((start, end))
- 
